@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --dark-blue: #081b29;
+  --light-blue:#112e42;
+  --text-white:#ededed;
+  --btn-blue:#00abf0;
+}
+
+html{ 
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  background: var(--dark-blue);
+  color: var(--text-white)
+
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: transparent ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  font-size: 5.5rem;
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+.navbar a{
+  font-size: 20px;
+  color: var(--text-white);
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--btn-blue);
+}
+
+#menu-icon{
+  font-size: 3.6rem;
+  color: var(--text-white);
+  cursor: pointer;
+  display: none;
+}
+
+section{
+  min-height: 100vh;
+  padding: 10 rem 9% 2rem;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  padding: 0 9%;
+}
+
+.home-content{
+  max-width:110rem ;
+  padding-top: 70px;
+}
+
+.home-content h1{
+  font-size: 5.6rem;
+  font-weight:700;
+  line-height:1.3;
+}
+
+.home-content .text-animate{
+  position: relative;
+  width: 32.8rem;
+ }
+.role{
+  width: 115%;
+font-size: 3rem;
+}
+ .home-content .text-animate h3{
+  font-size: 5.2 rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .8px var(--btn-blue);
+ }
+
+ .home-content p{
+  font-size: 3.6rem;
+  margin: 4rem 0 4rem;
+
+ }
+
+ .btn-box{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 34.5rem;
+  height: 5rem;
+ }
+
+ .btn-box .btn{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 100%;
+  background: var(--btn-blue);
+  border: .2rem solid var(--btn-blue) ;
+  border-radius: .8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  color: var(--light-blue);
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+ }
+
+ .btn-box .btn:hover{
+  color: var(--text-white);
+ }
+
+.btn-box .btn:nth-child(2)  { 
+  background: transparent;
+  color: var(--btn-blue);
+
+}
+/* 
+.btn-box .btn:nth-child(2) ::hover{
+  color:var(--text-white) ;
+}
+
+.btn-box .btn:nth-child(2)::before{
+  background: var(--dark-blue);
+}*/
+ 
+  .btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background : var(--light-blue);
+    z-index: -1;
+    transition: .5s;
+  }
+
+  .btn-box .btn :hover:before {
+    width: 100%;
+  }
+
+  .home-sci{
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-sci a {
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--light-blue);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--btn-blue);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+  }
+
+  .home-sci a:hover{
+    color: var(--text-white);
+  }
+
+  .home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--dark-blue);
+    z-index: -1;
+    transition: .5s ;
+  }
+
+  .home-sci a :hover::before{
+    width: 100%;
+  }
+  .bio{
+    background: var(--light-blue);
+    
+  }
+  .bio-content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--light-blue);
+    padding-top: 30rem;
+    padding-bottom: 6rem;
+
+  }
+
+  .heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+/* 
+ .bio-img{
+     position: relative;
+     width: 25rem;
+     height: 25rem;
+     border-radius: 50%;
+     left: 46%;
+     margin-bottom: 60px;
+  }   
+   .bio-img img{
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--dark-blue);
+    
+   }
+
+ .bio-img .circle-spin{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: .2rem solid red;
+  border-bottom: .2rem solid red;
+  border-right: .2rem var(--dark-blue);
+  border-left: .2rem var(--dark-blue);
+} */
+
+.bio-content{
+  text-align: center;
+   }
+
+.bio-content h3{
+  font-size: 5.6rem;
+}
+
+.bio-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.bio-content p{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-size: 3.0rem; 
+  margin: 2rem 0 3rem;
+  width: 70%;
+}
+
+.btn-box btns{
+
+display: inline-block;
+width: 15rem;
+}
+
+.btn-box .btn a ::before{
+background: var(--btn-blue);
+}
+
+.bio-btn{
+display: flex;
+justify-content: center;
+}
+
+.row{
+font-size: 2.1rem;
+display: flex;
+justify-content: space-around;
+padding-left: 4rem;
+padding-right: 4rem;
+padding-top: 11rem;
+padding-bottom: 10rem;
+
+}
+
+.column {
+margin: 3rem;
+float: left;
+width: 50%;
+ 
+
+}
+
+.column p{
+padding-left: 3rem;
+}
+
+
+.Elevator-content{
+padding-top: 50rem;
+padding-bottom: 40rem;
+display: flex;
+justify-content: center;
+font-size: 22px;
+
+}
+
+.bxl-youtube{
+padding-left: 19rem;
+bottom: 4rem;
+width: 170px;
+display: flex;
+justify-content: space-between;
+width: 40px;
+height: 40px;
+background: transparent;
+font-size: 40px;
+color: red;
+}
+
+.bxs-slideshow{
+padding-left: 19rem;
+bottom: 4rem;
+width: 170px;
+display: flex;
+justify-content: space-between;
+width: 40px;
+height: 40px;
+background: transparent;
+font-size: 30px;
+color: rgb(30, 233, 30);
+}
