@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WEB</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div>
+        <div>
+    <header class="header">
+        <div>
+        <a href="#" class="logo">Kibe</a>
+    </div>
+            <div>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#bio" >Bio</a>
+            <a href="#portfolio" >Portfolio</a>
+            
+        </nav>
+    </div>
+    </header>
+</div>
+<!--- main page content--->
+    <div>
+    <section class="home" id="home">
+       <div class="home-content">
+        <h1>Hi, I'm <span>Collins Kibe</span></h1>
+        <div class="text-animate">
+            <h3 class="role">Software Engineer</h3>
+        </div>
+        <p>"Embrace the bugs as stepping stones, for each challenge conquered is a stride towards software mastery.In the realm of code, a student becomes an architect of digital dreams, constructing tomorrow's possibilities line by line."</p>
+
+        <div class="btn-box">
+            <a href="#" class="btn">Hire Me</a>
+            <a href="#" class="btn">Let's Talk</a>
+        </div>
+       </div>
+       <div class="home-sci">
+        <a href="https://www.instagram.com/_.kibe_r/"><i class='bx bxl-instagram'></i></a>
+        <a href="https://twitter.com/CollinsKib15863"><i class='bx bxl-twitter' ></i></a>
+          
+       </div>
+    </section>
+</div>
+
+<!---bio content--->
+<div class="bio" id="bio">
+        <!---<h2 class="heading">Bio</h2>
+        <div class="bio-img">
+            <img src="me.jpg" alt="">--->
+            
+        </div>
+
+        <div class="bio-content">
+            <div class="bio-container">
+            <h3>Software Engineer!</h3>
+            <p>"I am a passionate web developer with expertise in designing interfaces using tools like Figma. My skills include proficiency in programming languages such as Python, HTML, and CSS. I possess a strong understanding of coding and technologies, as well as experience with creating simple command line apps using python and. I am familiar with operating systems such as Windows, Linux, and macOS. Additionally, I excel in problem-solving and critical thinking, actively participate in code reviews to ensure code quality and maintainability and have a track record of troubleshooting and debugging software issues in a timely manner."</p>
+
+            <div class="btn-box bio-btn "> 
+
+                <a href="#" class="btn ">Read More</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!---portfolio-page-->
+<div class="Portfolio" id="portfolio">
+           <div class="row">
+            <div class="column">
+            </div>
+           </div>
+</div>
+                
+          
+    <!---Elevator Pitch content--->
+<div class="Elevator Pitch" id="Elevator Pitch">
+                        <div class="Elevator-content">
+                        <div class="content">
+
+                           <p> This is a blank Page</p>
+                        
+                        </div>
+                    </div>
+                </div>
+           </div>
+         </div> 
+
+
+        </section>
+      
+</div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
